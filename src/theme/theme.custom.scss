@@ -1,3 +1,4 @@
+
 /*
  * App CUSTOM theme SCSS
  * ----------------------------------------------------------------------------
@@ -8,14 +9,151 @@
  * Light Theme
  * -------------------------------------------
  */
-:root {
+ :root {
 
-}
-
-/*
- * Dark Theme
- * -------------------------------------------
- */
-:root.dark {
-
-}
+    ion-spinner {
+            --color: #D41B56;
+           }
+    
+    core-tabs, core-tabs-outlet {
+    
+    /* Selected tab */
+    --core-tab-border-color-active: #49458f;
+    
+    }
+    
+    ion-button {
+                --color: rgb(255, 255, 255);
+               }
+    
+    core-progress-bar{
+                --core-progressbar-color: #D41B56;
+                --core-progressbar-text-color: #333333;
+                --core-progressbar-background:  #EFEFEF;
+                    }
+    
+    
+        html {
+            --ion-color-primary: #49458f;
+            --button-color: #49458f;
+    
+            /* Black or white, depending on which color gives more contrast */
+            --ion-color-primary-contrast: #ffffff;
+    
+            /* Slightly darker color. (mix 12% of black) */
+            --ion-color-primary-shade: #49458f;
+    
+            /* Slightly lighter color. (mix 10% of white) */
+            --ion-color-primary-tint: #49458f;
+        }
+    
+    
+        body {
+    
+            --ion-color-primary: #49458f;
+    
+            --core-login-background: rgb(255, 255, 255);
+            --core-login-text-color:  #49458f;
+            --core-login-input-background: #eef1f5;
+            --core-login-input-color: rgb(0, 0, 0);
+    
+    
+            ion-tab-bar.mainmenu-tabs {
+                /* Background
+                --core-bottom-tabs-background: #49458f;
+                --core-bottom-tabs-background-selected: transparent;*/
+    
+                /* Tab icons */
+                --core-bottom-tabs-color: #49458f;
+    
+                /* Selected tab icon */
+                --core-bottom-tabs-color-selected: #49458f;
+    
+                /* Badges */
+                --core-bottom-tabs-badge-text-color: rgb(255, 255, 255);
+                --core-bottom-tabs-badge-color: white;
+            }
+    
+    
+            /* Page background */
+            --background-color: #49458f;
+            --ion-background-color-rgb: 210, 65, 77;
+    
+            /* Background */
+        --ion-item-background: #fbfbfb;
+    
+        /* Divider */
+        --item-divider-background: #49458f;
+        --item-divider-color: rgb(255, 255, 255);
+    
+       /* Icons */
+    page-core-mainmenu-more {
+        --core-more-icon: #49458f;
+    
+        /* Use a red background by default */
+    ion-button {
+        --background: #49458f;
+    }
+    
+    ion-header ion-toolbar {
+        --core-header-toolbar-color: #49458f;
+    }
+    
+    
+    ion-button {
+        --background: #49458f;
+    }
+    ion-header ion-toolbar {
+        --core-header-toolbar-color: #49458f;
+    }
+    
+    core-tabs, core-tabs-outlet {
+        /* Background */
+        --core-tabs-background: #49458f;
+    
+        /* Tab */
+        --core-tab-background: #a36460;
+        --core-tab-color: white;
+    
+        /* Selected tab */
+        --core-tab-color-active: #49458f;
+        --core-tab-border-color-active: #49458f;
+        --core-tab-font-weight-active: bold;
+    
+        /* Icons */
+    page-core-mainmenu-more {
+        --core-more-icon: #49458f;
+    }
+    
+    /* Target a specific icon */
+    page-core-mainmenu-more .addon-privatefiles-handler ion-icon {
+        color: #49458f;
+    }
+    
+    /* Items */
+    page-core-mainmenu-more {
+        --core-more-item-border: #49458f;
+        --spacer-background: #49458f;
+    }
+    }
+    
+    
+        }
+    
+    }
+        }
+    
+    
+    
+    
+    
+    /*
+     * Dark Theme
+     * -------------------------------------------
+     */
+    :root body.dark {
+    
+        --core-login-background: rgb(255, 255, 255);
+    
+    }
+    
